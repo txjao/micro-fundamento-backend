@@ -16,9 +16,11 @@ namespace micro_fundamento_backend.Models
         public string Placa { get; set; }
 
         [Required(ErrorMessage = "AnoFabricacao obrigatorio")]
+        [Display(Name = "Ano De Fabricação")]
         public int AnoFabricacao { get; set; }
 
         [Required(ErrorMessage = "AnoModelo obrigatorio")]
+        [Display(Name = "Ano Do Modelo")]
         public int AnoModelo{ get; set; }
 
     }
